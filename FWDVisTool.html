@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Fitzgibbons - FWD Visualization Tool </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/navbar-scroll.js"></script>
+    <script src="scripts/highlighter.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/highlight.css" />
+
+    <style>
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image.
+                This will make the text easier to read
+            */
+
+            background-image: url("images/FWD/fwdDevice.jpg"), linear-gradient(to right, #34D1B6, #2DB39C);
+
+            /* Set a specific height */
+            height: 20rem;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</head>
+
+<body>
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+        <nav class="navbar navbar-light">
+            <span class="pl-5em">
+                <span class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch"></label>
+                    <span class="page-title"><a class="bare-link" href="index.html">Thomas Fitzgibbons</a></span>
+                </span>
+                <script src="scripts/dark-mode-switch.min.js"></script>
+            </span>
+
+            <span class="pr-4rem">
+                <span class="right-nav-1"><a class="bare-link" href="index.html">Projects</a></span>
+                <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+                <span class="right-nav-3"><a class="bare-link" href="Thomas%20Fitzgibbons%20CS%20Resume.pdf"
+                        target="_blank">Resume</a></span>
+            </span>
+        </nav>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Falling Weight Deflectometer Visualization Tool</h1>
+            <h4 class="mt-4">Webapp designed to visualize and predict future road repairs.</h4>
+            <p class="mt-4">Feb 2020 - Aug 2021</p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Main content area-->
+        <div class="container-fluid mt-5">
+            <div class="row flex-xl-nowrap">
+                <main class="col-12 col-md-11 col-xl-10 py-md-3 bd-content" role="main">
+                    <div class="row mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="about">
+                                <div>The Oppurtunity</div>
+                                <a class="anchorjs-link" href="#about" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>The Indiana Department Of Transportation (INDOT) purchased multiple Falling Weight Deflectometers (FWD) for use by their road designers to predict road repairs. Unfortunatly this FWD device outputs comma seperated lists, barely readable to the average engineer.
+                              </p>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="my-role">
+                                <div>The Solution</div>
+                                <a class="anchorjs-link" href="#my-role" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>To remedy this we proposed and developed a solution in which a dashcam would be run simultaniously during the collection process then uploaded automnously to a server. This upload process
+                              linkis the dashcam footage geolocation metadata with the coresponding FWD geolocation metadata then preforms image extraction using ffmpeg and OpenCV to generate individual frames from
+                              the dashcam. These 4k images and coresponding FWD data are stored on an oracle database. Road Designers at INDOT can view these extracted images and more using our webapp. The webapp uses
+                              ArcGIS API and Google Maps API to display and color points on the map based on geolocation and FWD surface deflection respectlivly. Additionally road designers can enlarge images, view imagery
+                              driving into and leaving a testing location, and view FWD data as Text or Graphically. This system is currently used by INDOT road designers.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="objectives">
+                                <div>Objectives</div>
+                                <a class="anchorjs-link" href="#objectives" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                           <li> <div>Develop solution to replace manualy looking through FWD files</div> </li>
+                                <br>
+
+                           <li> <div>Develop an algrithm to best fit FWD data to GIS data</div> </li>
+                                <br>
+
+                          <li>  <div>Demonstrate the use case and applications of the FWD visualization Tool</div> </li>
+                                <br>
+
+                          <li>  <div>Ongoing support after product delivery</div> </li>
+                                <br>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="process">
+                                <div>Gallary</div>
+                                <a class="anchorjs-link" href="#process" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>Below is the initial view of the FWD Visualization Tool. The quality of a road is dictated by its surface deflection with a high surface deflection (datapoints colored red) indicating an unhealthy road. The scale can be seen in the bottom
+                            left corner. Clicking on colored datapoints will display an associated image. The user can navigate along the current road or select a new road using the control panel at the top of the page. Additional widgets can be displayed by clicking the buttons on the right side of the map. </p>
+                            <!--
+                            <div class="row">
+                              <div class="column">
+                                <img src="images/FWD/mapBasic.png" alt="Snow"  class="img-fluid my-3">
+                              </div>
+                                <br>
+                                <div class="column">
+                                  <img src="images/FWD/popupBasic.png" alt="Forest"  class="img-fluid my-3">
+                                </div>
+                              </div> -->
+
+
+
+
+
+
+
+
+
+
+                            <img src="images/FWD/fwdMap3.jpg" alt="LeadSigma Whimsical Workspace"
+                                    class="img-fluid my-3" />
+
+
+
+                            <div class="row">
+                              <div class="column">
+                                <img src="images/FWD/fwdsmall2.jpg" alt="Snow">
+                              </div>
+                              <br>
+                              <div class="column" style="margin-left: 10%">
+                                <div class="img-fluid my-3"> <p> To the left is a close up of the image displayed by clicking a datapoint. The image shows the road at the site of testing. Located underneath the image are a few buttons that preform various applications.
+                                  The first icon (enlarge) expands the image to encompass 75% of the users screen. The next two icons change the image to display road imaegry extracted while driving to the current testing location and leaving the testing location. This gives the
+                                  road designer engineers the options to see surrouning road imagery. The icon on the left displays additonal action buttons including an option to download a 4k version of the image.
+                                  </p>
+                                  <br>
+                                  <p>Below is the enlarged version of the image. The user can shrink the image back to regular size by clicking the shrink button in bottom left corner of the image.</p>
+                               </div>
+                              </div>
+                            </div>
+
+                            <img src="images/FWD/fwdLarge1.jpg" alt="LeadSigma Whimsical Workspace"
+                                class="img-fluid my-3" />
+
+                            </div>:
+                            <div class="row row-cols-1 row-cols-md-2 p-3">
+                                <div class="mt-4 p-3">
+                                    <div class="h-100 border-0">
+                                        <div class="card h-100 border-0">
+                                            <a href="images/FWD/fwdWidget.png">
+                                                <img src="images/FWD/fwdWidget.png" class="card-img-top img-corner"
+                                                    alt="Figma app page" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 p-3">
+                                    <div class="h-100 border-0">
+                                        <div class="card h-100 border-0">
+                                            <a href="images/FWD/fwdGraph.png">
+                                                <img src="images/FWD/fwdGraph.png" class="card-img-top img-corner"
+                                                    alt="Figma components page" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>Above are the two widgets. The left image is of the FWD text widget. This widget is usefull to gather detailed information on high surface deflection (red) testing points.
+                              The right image is of the graph widget. This displays the surface and subgrade deflections graphically for the entire road. Clicking on data points in the graph display the
+                              associated image.</figcaption>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="reflection">
+                                <div>Reflection</div>
+                                <a class="anchorjs-link" href="#reflection" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                                <li><span class="highlight">Frequently ask for feedback on designs from interested parties:</span> Because I was working with a government agency there were a lot of regulations and security protocals to account for
+                                  It was imperative that what I created aligned with the vision of the investment team but fit the security and aproval of the IT department. This required numerous redesigns to account for these concerns.
+                                  In future projects I manage, I will work more directly with customer in the hopes this reduces the amount of redesigns.</li>
+                                <li><span class="highlight"> Dont Loose Heart:</span>
+                                    A lot of the work in this project was backend algorithms for the extraction process then linking to geolcation metadata. The process of calculating the best guess fit of extraction images is a novel concept and at times proved extremely dificult.
+                                  Through perserverence, determination, and a lot of trial and error, The alogrithm I created works in all but the most extreme cases (such as the driver going the wrong way for extended periods of time). </li>
+                            </ul>
+                            <p>I had a great time as software development lead on this project. I got to work directly with the customer and their IT staff. Overall I learned a lot that is applicable to future products moving forward</p>
+                            <div class="text-center">
+                              <iframe width="1280" height="720" src="https://www.youtube.com/embed/K7S6iPc7ye8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                <figcaption>Latest Recorded Demo of the WebApp (missing the feature to see imagery coming into and leaving the testing site). </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            <!-- Documentation -->
+  <!--  <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="Documentation">
+                                <div>View the Documentation!</div>
+                                <a class="anchorjs-link" href="#Documentation" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+
+                            <a href="Capstone%20Final.pdf" class="button" target="_blank">Click Me! </a>
+        </div>
+    </div> -->
+            </div>
+        </div>
+
+    <!-- Spacer -->
+    <div class="p-4"></div>
+
+    <!-- Right nav bar -->
+    <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc" id="rightnav">
+        <ul class="section-nav">
+            <li class="toc-entry">
+                <a href="#about"> The Oppurtunity </a>
+                <a href="#my-role"> The Solution </a>
+                <a href="#objectives"> Learning Objectives </a>
+                <a href="#process"> Gallary </a>
+                <a href="#reflection"> Reflection </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function setTop() {
+            document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600 - window.pageYOffset) + "px;");
+        }
+        window.addEventListener('scroll', setTop);
+        setTop();
+    </script>
+
+
+
+
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 pl-5">
+    <div class="col-10 mb-5">
+      <p class="mt-5 pl-3">100% organic and website builder free &#x1f389;</p>
+      <ul class="contact">
+        <li>
+          <a class="bare-link" href="https://www.linkedin.com/in/thomas-fitzgibbons-purdue/" target="_blank"><i
+              class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+          <a class="bare-link" href="https://github.com/thomasfitz29" target="_blank"><i
+              class="pr-2 fab fa-github fa-lg"></i></a>
+        </li>
+      </ul>
+      <p class="mt-4 pl-3">&copy; Thomas Fitzgibbons 2021</p>
+    </div>
+    <div class="col-2 mb-5">
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+</body>
+
+</html>

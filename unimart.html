@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Fitzgibbons - Unimart </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/navbar-scroll.js"></script>
+    <script src="scripts/highlighter.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/highlight.css" />
+
+    <style>
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image.
+                This will make the text easier to read
+            */
+
+            background-image: url("images/unimartbanner.jpg"), linear-gradient(to right, #34D1B6, #2DB39C);
+
+            /* Set a specific height */
+            height: 20rem;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</head>
+
+<body>
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+        <nav class="navbar navbar-light">
+            <span class="pl-5em">
+                <span class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch"></label>
+                    <span class="page-title"><a class="bare-link" href="index.html">Thomas Fitzgibbons</a></span>
+                </span>
+                <script src="scripts/dark-mode-switch.min.js"></script>
+            </span>
+
+            <span class="pr-4rem">
+                <span class="right-nav-1"><a class="bare-link" href="index.html">Projects</a></span>
+                <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+                <span class="right-nav-3"><a class="bare-link" href="Thomas%20Fitzgibbons%20CS%20Resume.pdf"
+                        target="_blank">Resume</a></span>
+            </span>
+        </nav>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="color: grey">Unimart</h1>
+            <h4 class="mt-4" style="color: grey">IOS Marketplace App for College Students</h4>
+            <p class="mt-4" style="color: grey">Spring 2021</p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Main content area-->
+        <div class="container-fluid mt-5">
+            <div class="row flex-xl-nowrap">
+                <main class="col-12 col-md-11 col-xl-10 py-md-3 bd-content" role="main">
+                    <div class="row mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="about">
+                                <div>The Oppurtunity</div>
+                                <a class="anchorjs-link" href="#about" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>Craigslist, Facebook Marketplace, LetGo, and other marketplace applications share one common flaw: a lack of safety. Our Product, Unimart, Seeks to solve that. Our plan was to work directly with uniersitys to establish secure
+                              market places that only their students can access. This coupled with a state of the art UI make Unimart an excellent alternative to a traditional marketplace app.
+                              </p>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="my-role">
+                                <div>The Solution</div>
+                                <a class="anchorjs-link" href="#my-role" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>How often have you been hesitent to purchase a used item on craigslist, Facebook Marketplace or LetGo but were afraid of meeting the seller due to saftey conerns. Our team of four set out to change this stigma by developing a mobile marketplace app catored
+                              to college students. We wanted to work with colleges to require a secure, university specific login, so only university students and staff can access said institutes marketplace. Additionally each user has a "legitmacy score" that tracks app usage, product selling,
+                              product purchasing, etc. Though this doesnt fix the problem entirely, it eliminates a majority of potential threats to college aged users esepecially women and minorities. Unfortunatly we didnt get the opurtunity to work with our univsity however it serves as an
+                              excellent proof of concept. This project was our Senior Design Project at Purdue Univerity, Spring 2020.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="objectives">
+                                <div>Objectives</div>
+                                <a class="anchorjs-link" href="#objectives" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                           <li> <div>Work directly with colleges for secure login</div> </li>
+                                <br>
+
+                           <li> <div>Develop easy to use, unique marketplace</div> </li>
+                                <br>
+
+                          <li>  <div>Develop state if the art UI</div> </li>
+                                <br>
+
+                          <li>  <div>Work with a team using scrum methodology for weekly deliverables</div> </li>
+                                <br>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="process">
+                                <div>Gallary</div>
+                                <a class="anchorjs-link" href="#process" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>Below are images of Unimart.</p>
+
+                            <div class="row">
+                              <div class="column">
+                                <img src="images/unimart/unimart1.jpg" alt="Snow"  class="img-fluid my-3">
+                                <figcaption>Above is the inital login page. Users can either create an acoount, Sign in with Apple, Facebook or Google.</figcaption>
+                              </div>
+                                <br>
+                                <div class="column">
+                                  <img src="images/unimart/unimart4.jpg" alt="Forest"  class="img-fluid my-3">
+                                  <figcaption>Above is the default marketplace view for Purdue Univesity. There are a couple items for sale</figcaption>
+                                </div>
+
+                              </div>
+
+
+                              <div class="row">
+                                <div class="column">
+                                  <img src="images/unimart/unimart6.jpg" alt="Snow"  class="img-fluid my-3">
+                                  <figcaption>Above is a view of the possible fliters that can be applied when searching for a product.</figcaption>
+                                </div>
+                                  <br>
+                                  <div class="column">
+                                    <img src="images/unimart/unimart2.jpg" alt="Forest"  class="img-fluid my-3">
+                                    <figcaption>Above are products you have shown interest in.</figcaption>
+                                  </div>
+
+                                </div>
+
+
+
+
+                                <div class="row">
+                                  <div class="column">
+                                    <img src="images/unimart/unimart3.jpg" alt="Snow"  class="img-fluid my-3">
+                                    <figcaption>Above is the details page for a specific product (masks). It encludes a multitude of information including address, time to pickup, phone number, etc.</figcaption>
+                                  </div>
+                                    <br>
+                                    <div class="column">
+                                      <img src="images/unimart/unimart5.jpg" alt="Forest"  class="img-fluid my-3">
+                                      <figcaption>Above is a live chat generated for each product. This feature is unique to unimart and allows the users to get quick information either directly from the seller or from another potential buyer. </figcaption>
+                                    </div>
+
+                                  </div>
+
+
+                                  <div class="row">
+                                    <div class="column">
+                                      <img src="images/unimart/unimart7.jpg" alt="Snow"  class="img-fluid my-3">
+                                      <figcaption>Above is the details page for a uploading a new product to sell.</figcaption>
+                                    </div>
+                                      <br>
+                                      <div class="column">
+                                        <img src="images/unimart/unimart10.jpg" alt="Forest"  class="img-fluid my-3">
+                                        <figcaption>Above is Apple map integration for geolocation information (sellers address).</figcaption>
+                                      </div>
+
+                                    </div>
+
+
+
+                                    <div class="row">
+                                      <div class="column">
+                                        <img src="images/unimart/unimart8.jpg" alt="Snow"  class="img-fluid my-3">
+                                        <figcaption>Above you can see the seller can tag their product with their own images and icons.</figcaption>
+                                      </div>
+                                        <br>
+                                        <div class="column">
+                                          <img src="images/unimart/unimart9.jpg" alt="Forest"  class="img-fluid my-3">
+                                          <figcaption>Above is the settings page.</figcaption>
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="reflection">
+                                <div>Reflection</div>
+                                <a class="anchorjs-link" href="#reflection" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                                <li><span class="highlight">Transfer of skills between projects:</span> This was my third large scale CS project, and second mobile app. A lot of aspects from my previous projects played roles in developing unimart. I also took a class on app developement which helped.
+                                  You can see the progression in my develpoment skills when viewing the other proejcts I have worked on. </li>
+                                <li><span class="highlight"> Proper Documentation / Planning goes a long way:</span> This was my second group project, also with a smaller team. The experience from my first time lead us to plan out this project much more extensivly. Each team member had specific roles to fulfil, mine being primarily front end and database design.
+                                    </li>
+                            </ul>
+                            <p>I had a great time as full stack developer on this project. This is a great example of the aesthetic possible with the right team.</p>
+                            <div class="text-center">
+                                <iframe width="894" height="863" src="https://www.youtube.com/embed/WEz1KFVGNIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <figcaption>Recorded demo as backup for senior design presentation</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            <!-- Documentation -->
+  <!--  <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="Documentation">
+                                <div>View the Documentation!</div>
+                                <a class="anchorjs-link" href="#Documentation" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+
+                            <a href="Capstone%20Final.pdf" class="button" target="_blank">Click Me! </a>
+        </div>
+    </div> -->
+            </div>
+        </div>
+
+    <!-- Spacer -->
+    <div class="p-4"></div>
+
+    <!-- Right nav bar -->
+    <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc" id="rightnav">
+        <ul class="section-nav">
+            <li class="toc-entry">
+                <a href="#about"> The Oppurtunity </a>
+                <a href="#my-role"> The Solution </a>
+                <a href="#objectives"> Learning Objectives </a>
+                <a href="#process"> Gallary </a>
+                <a href="#reflection"> Reflection </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function setTop() {
+            document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600 - window.pageYOffset) + "px;");
+        }
+        window.addEventListener('scroll', setTop);
+        setTop();
+    </script>
+
+
+
+
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 pl-5">
+    <div class="col-10 mb-5">
+      <p class="mt-5 pl-3">100% organic and website builder free &#x1f389;</p>
+      <ul class="contact">
+        <li>
+          <a class="bare-link" href="https://www.linkedin.com/in/thomas-fitzgibbons-purdue/" target="_blank"><i
+              class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+          <a class="bare-link" href="https://github.com/thomasfitz29" target="_blank"><i
+              class="pr-2 fab fa-github fa-lg"></i></a>
+        </li>
+      </ul>
+      <p class="mt-4 pl-3">&copy; Thomas Fitzgibbons 2021</p>
+    </div>
+    <div class="col-2 mb-5">
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+</body>
+
+</html>

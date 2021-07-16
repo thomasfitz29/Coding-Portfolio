@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Fitzgibbons - FWD Visualization Tool </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/navbar-scroll.js"></script>
+    <script src="scripts/highlighter.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/highlight.css" />
+
+    <style>
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image.
+                This will make the text easier to read
+            */
+
+            background-image: url("images/dronePowerPlant.jpg"), linear-gradient(to right, #34D1B6, #2DB39C);
+
+            /* Set a specific height */
+            height: 20rem;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</head>
+
+<body>
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+        <nav class="navbar navbar-light">
+            <span class="pl-5em">
+                <span class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch"></label>
+                    <span class="page-title"><a class="bare-link" href="index.html">Thomas Fitzgibbons</a></span>
+                </span>
+                <script src="scripts/dark-mode-switch.min.js"></script>
+            </span>
+
+            <span class="pr-4rem">
+                <span class="right-nav-1"><a class="bare-link" href="index.html">Projects</a></span>
+                <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+                <span class="right-nav-3"><a class="bare-link" href="Thomas%20Fitzgibbons%20CS%20Resume.pdf"
+                        target="_blank">Resume</a></span>
+            </span>
+        </nav>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Crack Recognition and Quantification Software</h1>
+            <h4 class="mt-4">Machine Learning Algorithm to Detect and Visualize Cracks in Drone Footage and Associated Neural Network Training Tool</h4>
+            <p class="mt-4">Aug 2020 - Aug 2021</p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Main content area-->
+        <div class="container-fluid mt-5">
+            <div class="row flex-xl-nowrap">
+                <main class="col-12 col-md-11 col-xl-10 py-md-3 bd-content" role="main">
+                    <div class="row mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="about">
+                                <div>The Oppurtunity</div>
+                                <a class="anchorjs-link" href="#about" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p> Companies big and small pay thousands of dollars in safety inspections of their equipment and structures. Our team has changed the way safety inspections will be conducted in the future. We have developed a software that drone footage
+                              can be uploaded to that is processed by our machine learning algorithm using computer vision. Our crack recognition algorithm is vastly superior to any alternative on the market as explained later in this page. We have also developed an additonal
+                              software called the Anotation Tool, in which the user can retrain the neural network for different structural materials. I joined the team from 2020-2021.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="my-role">
+                                <div>The Solution</div>
+                                <a class="anchorjs-link" href="#my-role" aria-label="Anchor" data-anchorjs-icon="#">
+                                </a>
+                            </h2>
+                            <p>
+                              This project began in 2017 as a graduate research project at Purdue University. Fu-Chen Chen developed a deep learning-based crack detection algorithm using a convolutional neural network and Na¨ıve Bayes Data Fusion. This was significant
+                              not only due to it being the first known steel structure crack detection algorithm, but also because Fu-Chen conceived a novel procedure for training the nural network. Called the "Anotation Tool" this software makes training neural networks
+                              significantly easier and faster (for the user). Fast forward to 2021 and we have 3 major companies interested in using this software for saftey inspections in nuclear reactor walls. Our team of 4 have been working to improve Fu-Chens initial
+                              algorithm's reliability due to the rushed development and novelty of the solution. We have also created a UI in python for both the crack recognition visualizer and anotation tool. We are curently in the process of transitioning to tensorflow2 and
+                              cuda 11 for compatibility with the new nvidea 3000 series graphic cards. I also compile the scripts into windows executables for every new version we produce.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="objectives">
+                                <div>Objectives</div>
+                                <a class="anchorjs-link" href="#objectives" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                           <li> <div>Get inital concept algorithm market ready</div> </li>
+                                <br>
+
+                           <li> <div>Upgrade codebase to modern libraries</div> </li>
+                                <br>
+
+                          <li>  <div>Demonstrate the use case and applications of CRAQ</div> </li>
+                                <br>
+
+                          <li>  <div>Ongoing updates to the algorithm and new visualiztion features</div> </li>
+                                <br>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="process">
+                                <div>Gallary</div>
+                                <a class="anchorjs-link" href="#process" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>Due to legal concerns I cannot show imagery of this project. Sorry for the inconvenience. </p>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="reflection">
+                                <div>Reflection</div>
+                                <a class="anchorjs-link" href="#reflection" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                                <li><span class="highlight">Beneifts of future proofing code:</span> When this algorithm was initally concieved their was little concern for the longevity of the code. It has been a difficult process updating and fixing the code, especially for edge cases.
+                                This is made more difficult as we are generally not aloud to see footage our clients are using due to the confidentiality of the imagery.</li>
+                                <li><span class="highlight"> Record Everything:</span> A lot of meetings were discussed topics that were technologicaly advanced, and it is easy to get lost, or not understand a concept. Additonally two of our customers
+                                  are foreign so at tiems there can be a language barrier. I began recording meetings (with everyones permission of course) and generating personal action items when reviewing the recordings.
+                                    </li>
+                            </ul>
+                            <p>I had a great time as a full stack developer on this project. I got to work with a lot of brilliant graduate students and with engineers from some very big companies. Overall I learned a lot that is applicable to future products moving forward</p>
+
+                        </div>
+                    </div>
+                </main>
+
+            <!-- Documentation -->
+  <!--  <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="Documentation">
+                                <div>View the Documentation!</div>
+                                <a class="anchorjs-link" href="#Documentation" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+
+                            <a href="Capstone%20Final.pdf" class="button" target="_blank">Click Me! </a>
+        </div>
+    </div> -->
+            </div>
+        </div>
+
+    <!-- Spacer -->
+    <div class="p-4"></div>
+
+    <!-- Right nav bar -->
+    <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc" id="rightnav">
+        <ul class="section-nav">
+            <li class="toc-entry">
+                <a href="#about"> The Oppurtunity </a>
+                <a href="#my-role"> The Solution </a>
+                <a href="#objectives"> Learning Objectives </a>
+                <a href="#process"> Gallary </a>
+                <a href="#reflection"> Reflection </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function setTop() {
+            document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600 - window.pageYOffset) + "px;");
+        }
+        window.addEventListener('scroll', setTop);
+        setTop();
+    </script>
+
+
+
+
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 pl-5">
+    <div class="col-10 mb-5">
+      <p class="mt-5 pl-3">100% organic and website builder free &#x1f389;</p>
+      <ul class="contact">
+        <li>
+          <a class="bare-link" href="https://www.linkedin.com/in/thomas-fitzgibbons-purdue/" target="_blank"><i
+              class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+          <a class="bare-link" href="https://github.com/thomasfitz29" target="_blank"><i
+              class="pr-2 fab fa-github fa-lg"></i></a>
+        </li>
+      </ul>
+      <p class="mt-4 pl-3">&copy; Thomas Fitzgibbons 2021</p>
+    </div>
+    <div class="col-2 mb-5">
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+</body>
+
+</html>

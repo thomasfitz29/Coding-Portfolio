@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Fitzgibbons - Boiler Comms </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/navbar-scroll.js"></script>
+    <script src="scripts/highlighter.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/highlight.css" />
+
+    <style>
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image.
+                This will make the text easier to read
+            */
+
+            background-image: url("images/boilercommsBanner.jpg"), linear-gradient(to right, #34D1B6, #2DB39C);
+
+            /* Set a specific height */
+            height: 20rem;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</head>
+
+<body>
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+        <nav class="navbar navbar-light">
+            <span class="pl-5em">
+                <span class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch"></label>
+                    <span class="page-title"><a class="bare-link" href="index.html">Thomas Fitzgibbons</a></span>
+                </span>
+                <script src="scripts/dark-mode-switch.min.js"></script>
+            </span>
+
+            <span class="pr-4rem">
+                <span class="right-nav-1"><a class="bare-link" href="index.html">Projects</a></span>
+                <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+                <span class="right-nav-3"><a class="bare-link" href="Thomas%20Fitzgibbons%20CS%20Resume.pdf"
+                        target="_blank">Resume</a></span>
+            </span>
+        </nav>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="color: grey">Unimart</h1>
+            <h4 class="mt-4" style="color: grey">IOS Marketplace App for College Students</h4>
+            <p class="mt-4" style="color: grey">Spring 2021</p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Main content area-->
+        <div class="container-fluid mt-5">
+            <div class="row flex-xl-nowrap">
+                <main class="col-12 col-md-11 col-xl-10 py-md-3 bd-content" role="main">
+                    <div class="row mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="about">
+                                <div>The Oppurtunity</div>
+                                <a class="anchorjs-link" href="#about" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>Fall 2020 semester I took CS307: "Intro To Software Engineering". We were tasked with creating a social media app with attributes from many major social media platorms.
+                              </p>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="my-role">
+                                <div>The Solution</div>
+                                <a class="anchorjs-link" href="#my-role" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>Our Team of 6 developed Boiler Comms, with myself as project lead. This social media app takes inspiration from many major social media sites. For example: the "wall" from facebook, "subreddits" and comments like reddit,
+                               and a character limit of twiter. We completed three seperant sprints throughout the semester, using the scrum methodolgy to set sprint goals. As project lead it was my job to designate the best tasks for each
+                               individual baised on their strengths. I was also a full stack developer primarily working on the backend/database design. The front end is built in android studio, and the backend in PHP/MySQL. Ultimatly we delivered a secure, fast, mobile app, albeit lacking in great aesthetic choices.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="objectives">
+                                <div>Objectives</div>
+                                <a class="anchorjs-link" href="#objectives" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                           <li> <div>Produce a social media site similar to that of other major social media sites</div> </li>
+                                <br>
+
+                           <li> <div>Preform 3 sprints throughout the semester making use of the scrum methodology</div> </li>
+                                <br>
+
+                          <li>  <div>Leadership over 5 other developers</div> </li>
+                                <br>
+
+                          <li>  <div>Demo and present the state of the app after each sprint</div> </li>
+                                <br>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="process">
+                                <div>Gallary</div>
+                                <a class="anchorjs-link" href="#process" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>Below are images of Boiler Comms.</p>
+
+                            <div class="row">
+                              <div class="column">
+                                <img src="images/boilerComms/boiler1.jpg" alt="Snow"  class="img-fluid my-3">
+                                <figcaption>Inital login page</figcaption>
+                              </div>
+                                <br>
+                                <div class="column">
+                                  <img src="images/boilerComms/boiler2.jpg" alt="Forest"  class="img-fluid my-3">
+                                  <figcaption>Main feed consits of posts on your wall, posts on your friends walls, or posts on subreddits you follow</figcaption>
+                                </div>
+
+                              </div>
+
+
+                              <div class="row">
+                                <div class="column">
+                                  <img src="images/boilerComms/boiler4.jpg" alt="Snow"  class="img-fluid my-3">
+                                  <figcaption>Viewing a post (click on it from your main feed)</figcaption>
+                                </div>
+                                  <br>
+                                  <div class="column">
+                                    <img src="images/boilerComms/boiler5.jpg" alt="Forest"  class="img-fluid my-3">
+                                    <figcaption>Viewing a post with a link (the links work)</figcaption>
+                                  </div>
+
+                                </div>
+
+
+
+
+                                <div class="row">
+                                  <div class="column">
+                                    <img src="images/boilerComms/boiler3.jpg" alt="Snow"  class="img-fluid my-3">
+                                    <figcaption>Viewing comment section of a post. It will expand indefenintly for comments and replies like reddit</figcaption>
+                                  </div>
+                                    <br>
+                                    <div class="column">
+                                      <img src="images/boilerComms/boiler6.jpg" alt="Forest"  class="img-fluid my-3">
+                                      <figcaption>New post creation form</figcaption>
+                                    </div>
+
+                                  </div>
+
+
+                                  <div class="row">
+                                    <div class="column">
+                                      <img src="images/boilerComms/boiler7.jpg" alt="Snow"  class="img-fluid my-3">
+                                      <figcaption>Searching for a new subreddit (topic). Anyone can create a new topic.</figcaption>
+                                    </div>
+                                      <br>
+                                      <div class="column">
+                                        <img src="images/boilerComms/boiler8.jpg" alt="Forest"  class="img-fluid my-3">
+                                        <figcaption>Viewing your profile</figcaption>
+                                      </div>
+
+                                    </div>
+
+
+
+                                    <div class="row">
+                                      <div class="column">
+                                        <img src="images/boilerComms/boiler9.jpg" alt="Snow"  class="img-fluid my-3">
+                                        <figcaption>Direct message to friends</figcaption>
+                                      </div>
+                                        <br>
+                                        <div class="column">
+                                          <img src="images/boilerComms/boiler10.jpg" alt="Forest"  class="img-fluid my-3">
+                                          <figcaption>Block a user (wont see any posts or messages from blocked user)</figcaption>
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="reflection">
+                                <div>Reflection</div>
+                                <a class="anchorjs-link" href="#reflection" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                                <li><span class="highlight">Project Mangament:</span> This was my first CS project leading a large team. There were times it  was difficult, especially as team lead, like pulling all nighters before sprint due dates. However it was also rewarding getting
+                                teamates motivated and guiding them to improve. I learned a lot that will be applicable to my future work.</li>
+                                <li><span class="highlight">Importance of Front End Developers:</span> Our team had two teammebers with limit front end development experience. The rest of our team were primarily backend developers up to this point. Developing an aesthetically pleasing UI proved
+                                  more difficult than we imagined, and I was not fully happy with how the final product looked. Moving forward I will always remeber the importance of a strong frontend developer. This inspired me to take an app developemnt class.
+                                    </li>
+                            </ul>
+                            <p>I had a great time as full stack developer and team lead on this project. Though it is not my best work, I think it shows my development progression, when compared to my future projects.</p>
+                            <div class="text-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            <!-- Documentation -->
+  <!--  <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="Documentation">
+                                <div>View the Documentation!</div>
+                                <a class="anchorjs-link" href="#Documentation" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+
+                            <a href="Capstone%20Final.pdf" class="button" target="_blank">Click Me! </a>
+        </div>
+    </div> -->
+            </div>
+        </div>
+
+    <!-- Spacer -->
+    <div class="p-4"></div>
+
+    <!-- Right nav bar -->
+    <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc" id="rightnav">
+        <ul class="section-nav">
+            <li class="toc-entry">
+                <a href="#about"> The Oppurtunity </a>
+                <a href="#my-role"> The Solution </a>
+                <a href="#objectives"> Learning Objectives </a>
+                <a href="#process"> Gallary </a>
+                <a href="#reflection"> Reflection </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function setTop() {
+            document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600 - window.pageYOffset) + "px;");
+        }
+        window.addEventListener('scroll', setTop);
+        setTop();
+    </script>
+
+
+
+
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 pl-5">
+    <div class="col-10 mb-5">
+      <p class="mt-5 pl-3">100% organic and website builder free &#x1f389;</p>
+      <ul class="contact">
+        <li>
+          <a class="bare-link" href="https://www.linkedin.com/in/thomas-fitzgibbons-purdue/" target="_blank"><i
+              class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+          <a class="bare-link" href="https://github.com/thomasfitz29" target="_blank"><i
+              class="pr-2 fab fa-github fa-lg"></i></a>
+        </li>
+      </ul>
+      <p class="mt-4 pl-3">&copy; Thomas Fitzgibbons 2021</p>
+    </div>
+    <div class="col-2 mb-5">
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+</body>
+
+</html>
